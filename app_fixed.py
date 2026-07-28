@@ -1,4 +1,4 @@
-import av
+import cv2
 import streamlit as st
 from ultralytics import YOLO
 from streamlit_webrtc import webrtc_streamer, VideoProcessorBase
@@ -79,7 +79,7 @@ class VideoProcessor(VideoProcessorBase):
 
         y = 40
 
-        import cv2
+      
 
         cv2.putText(
             annotated,
